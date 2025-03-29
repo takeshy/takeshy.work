@@ -1,0 +1,22 @@
+:root {
+    --primary: #2E3192;
+    --secondary: #00A99D;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --accent: #FF6B6B;
+    --text: #333;
+    --bg: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
