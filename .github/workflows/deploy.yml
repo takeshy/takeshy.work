@@ -36,4 +36,16 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync out/ s3://takesys-web --delete
+          aws s3 sync out/ s3://takesys-web \
+            --delete \
+            --cache-control "max-age=31536000, public" \
+            --exclude "*.html" \
+            --metadata-directive REPLACE \
+            --content-type "text/css" \
+            --include "*.css"
+
+          aws s3 sync out/ s3://takesys-web \
+            --delete \
+            --cache-control "no-cache" \
+            --content-type "text/html" \
+            --include "*.html"
