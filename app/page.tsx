@@ -5,20 +5,6 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <>
-      <header className={styles.header}>
-        <div className={styles.container}>
-          <div className={styles.flexItems}>
-            <Image
-              src="/takeshy_logo.png"
-              alt="takeshy.work"
-              width={150}
-              height={0}
-              style={{ height: "auto", objectFit: "contain" }}
-              priority
-            />
-          </div>
-        </div>
-      </header>
 
       <section className={styles.hero}>
         <div className={styles.container}>

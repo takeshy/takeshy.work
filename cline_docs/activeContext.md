@@ -2,19 +2,22 @@
 
 ## Current Task
 
-Brightening the top page and implementing eye catch image:
+Fixed header display on policy and terms pages:
 
-1. Adding eye catch image from public/eye_catch.png
-2. Adjusting styles to create a brighter appearance
+1. Created a shared Header component
+2. Updated layout.tsx to include the Header component
+3. Removed duplicate headers from individual pages
+4. Fixed header layout issues with inline styles
 
 ## Recent Changes
 
-- Initial Memory Bank setup
-- Documentation of project structure and requirements
+- Created app/components/Header.tsx with shared header implementation
+- Updated app/layout.tsx to include the shared Header component
+- Removed duplicate headers from policy, terms, and home pages
+- Fixed header layout issues by switching from Tailwind CSS to inline styles
+- Ensured links are properly aligned horizontally with spacing between them
 
 ## Next Steps
 
-1. Create/modify top page (app/page.tsx)
-2. Implement eye catch image
-3. Update styles for brighter appearance
-4. Test visual appearance and image loading
+1. Verify navigation works correctly on all pages
+2. Continue with the previous task of brightening the top page

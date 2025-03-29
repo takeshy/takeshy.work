@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
     --primary: #2E3192;
     --secondary: #00A99D;
@@ -8,15 +10,9 @@
     --bg: #FFFFFF;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
 body {
     background-color: var(--bg);
     color: var(--text);
     line-height: 1.6;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }

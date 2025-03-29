@@ -1,4 +1,5 @@
 import "./globals.css";
+import Header from "./components/Header";
 
 export const metadata = {
   title: "takeshy.work - モダンなビジネスソリューション",
@@ -19,7 +20,10 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
